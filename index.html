@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Amazon Clone</title>
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <div class="nav_logo border">
+                <div class="logo ">
+
+                </div>
+            </div>
+
+            <div class="nav_address border">
+                <p class="add-delivery">Deliver to</p>
+                <div class="add_icon">
+                    <i class="fa-solid fa-location-dot" id="location-icon"></i>
+                    <p add-location>Pakistan</p>
+                </div>
+            </div>
+            <div class="nav-search-container">
+                <div class="nav-search">
+                    <select class="search-select">
+                        <option>All</option>
+                    </select>
+
+                    <input type="text" placeholder="Search Amazon" class="search-input">
+                    <i class="fa-solid fa-magnifying-glass" id="search-icon"></i>
+                </div>
+            </div>
+            <div class="select-flag border">
+                <i class="fa-solid fa-earth-americas" id="wolrd"></i>
+                <select class="select-language">
+                    <option value="EN">EN</option>
+                </select>
+            </div>
+            <div class="nav-sign-in border">
+                <p><span>Hello, sign in</span></p>
+                <p class="nav-first">Account & Lists</p>
+            </div>
+            <div class="nav-order border">
+                <p><span>Return</span></p>
+                <p class="nav-first">& Orders</p>
+            </div>
+            <div class="add-to-card border">
+
+                <i class="fa-solid fa-cart-shopping" style="font-size:30px;"></i>
+                <p class="cart">Cart</p>
+
+            </div>
+        </div>
+        <div class="nav-offers">
+            <div class="list-all border">
+                <div class="all">
+                    <i class="fa-solid fa-list-ul" style="font-size: 19px;"> </i>
+                    <a href="" id="all">All</a>
+                </div>
+
+            </div>
+            <div class="list-all border">
+                <div class="all">
+                    <a href="">Today's Deals</a>
+                </div>
+            </div>
+            <div class="list-all border">
+                <div class="all">
+                    <a href="">Customer Service</a>
+                </div>
+            </div>
+            <div class="list-all border">
+                <div class="all">
+                    <a href="">Registry</a>
+                </div>
+            </div>
+            <div class="list-all border">
+                <div class="all">
+                    <a href="">Gift Cards</a>
+                </div>
+            </div>
+            <div class="list-all border">
+                <div class="all">
+                    <a href="">Sell</a>
+                </div>
+            </div>
+            <div class="list-all border">
+                <div class="all">
+                    <a href="">Shop deals in electronics</a>
+                </div>
+            </div>
+
+        </div>
+
+    </header>
+    <div class="hero-section">
+        <div class="hero-carousel">
+            <div class="hero-slide active" style="background-image: url('amazon-hero.jpg');"></div>
+            <div class="hero-slide active" style="background-image: url('hero_toys.jpg');"></div>
+            
+            <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+            <button class="next" onclick="changeSlide(1)">&#10095;</button>
+        </div>
+    </div>
+
+    <div class="shop-section">
+        <div class="box1 box">
+            <h2 style="padding: 0px 20px 0px 20px;">Toys under 25$</h2>
+            <div class="box-image" style="background-image: url('Toys.jpg');"></div>
+            <p>See more</p>
+        </div>
+        <div class="box2 box">
+            <h2 style="padding: 0px 20px 0px 20px;">Home decor under 50</h2>
+            <div class="box-image" style="background-image: url('Home decoration.jpg');"></div>
+            <p>Shop now</p>
+        </div>
+        <div class="box3 box">
+            <h2 style="padding: 0px 20px 0px 20px;">Beauty steals</h2>
+            <div class="box-image" style="background-image: url('Beauty steals.jpg');"></div>
+            <p>Shop now</p>
+        </div>
+        <div class="box4 box">
+            <h2 style="padding: 0px 20px 0px 20px;">Smartwatch under 50</h2>
+            <div class="box-image" style="background-image: url('Smartwatches.jpg');"></div>
+            <p>Shop now</p>
+        </div>
+    </div>
+    
+    <div class="shop-section">
+        <div class="box1 box">
+            <h2 style="padding: 0px 20px 0px 20px;">Deals on PC</h2>
+            <div class="box-image" style="background-image: url('PC casing.jpg');"></div>
+            <p>See more</p>
+        </div>
+        <div class="box2 box">
+            <h2 style="padding: 0px 20px 0px 20px;">Dress</h2>
+            <div class="box-image" style="background-image: url('Dress.jpg');"></div>
+            <p>Shop now</p>
+        </div>
+        <div class="box3 box">
+            <h2 style="padding: 0px 20px 0px 20px;">Shoes</h2>
+            <div class="box-image" style="background-image: url('Shoes.jpg');"></div>
+            <p>Shop now</p>
+        </div>
+        <div class="box4 box">
+            <h2 style="padding: 0px 20px 0px 20px;">Refresh your space</h2>
+            <div class="box-image" style="background-image: url('Refresh space.jpg');"></div>
+            <p>Shop now</p>
+        </div>
+    </div>
+
+    <footer>
+        <div class="back-to-top" style="background-color: #485769;">
+          <a href="#">Back to top</a>
+        </div>
+        <div class="footer-container">
+          <div class="footer-column">
+            <h3>Get to Know Us</h3>
+            <ul>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">About Amazon</a></li>
+              <li><a href="#">Investor Relations</a></li>
+              <li><a href="#">Amazon Devices</a></li>
+              <li><a href="#">Amazon Science</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>Make Money with Us</h3>
+            <ul>
+              <li><a href="#">Sell products on Amazon</a></li>
+              <li><a href="#">Sell on Amazon Business</a></li>
+              <li><a href="#">Sell apps on Amazon</a></li>
+              <li><a href="#">Become an Affiliate</a></li>
+              <li><a href="#">Advertise Your Products</a></li>
+              <li><a href="#">Self-Publish with Us</a></li>
+              <li><a href="#">Host an Amazon Hub</a></li>
+              <li><a href="#">› See More Make Money with Us</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>Amazon Payment Products</h3>
+            <ul>
+              <li><a href="#">Amazon Business Card</a></li>
+              <li><a href="#">Shop with Points</a></li>
+              <li><a href="#">Reload Your Balance</a></li>
+              <li><a href="#">Amazon Currency Converter</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>Let Us Help You</h3>
+            <ul>
+              <li><a href="#">Amazon and COVID-19</a></li>
+              <li><a href="#">Your Account</a></li>
+              <li><a href="#">Your Orders</a></li>
+              <li><a href="#">Shipping Rates & Policies</a></li>
+              <li><a href="#">Returns & Replacements</a></li>
+              <li><a href="#">Manage Your Content and Devices</a></li>
+              <li><a href="#">Help</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <div class="footer-logo">
+            <img src="Amazon_logo.png" alt="Amazon">
+          </div>
+          <div class="footer-settings">
+            <span>English</span>
+            <span>$ USD - U.S. Dollar</span>
+            <span>United States</span>
+          </div>
+        </div>
+      </footer>
+      
+
+    <script src="script.js"></script>
+</body>
+
+</html>
